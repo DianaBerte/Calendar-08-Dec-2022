@@ -1,7 +1,19 @@
 function onDayClick(event) { //this is an event listener, so it'll receive as parameter an event 
     //we clicked a day! how do we know which one?
-let clickedDayNode = event.target
-clickedDayNode.classList.add('selected') //now we're selecting the days and they stay selected
+    
+    let previouslySelectedDay = document.querySelector('.selected');
+
+    if (previouslySelectedDay !== null) {
+        previouslySelectedDay.classList.remove("selected");
+    }
+    
+    previouslySelectedDay.classList.remove('selected')
+    
+
+    let clickedDayNode = event.target
+    
+    
+    clickedDayNode.classList.add('selected') //now we're selecting the days and they stay selected
 }
 
 

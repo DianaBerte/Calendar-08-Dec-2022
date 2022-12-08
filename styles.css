@@ -35,3 +35,8 @@ h1 {
     border-color: green;
     background-color: aqua;
 }
+
+.selected {
+    border-color: green;
+    background-color: aqua;
+}
